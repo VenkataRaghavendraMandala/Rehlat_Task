@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1842766324A3429700B049ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842766224A3429700B049ED /* AppDelegate.swift */; };
+		1842766524A3429700B049ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842766424A3429700B049ED /* SceneDelegate.swift */; };
+		1842766724A3429700B049ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842766624A3429700B049ED /* ViewController.swift */; };
+		1842766A24A3429700B049ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842766824A3429700B049ED /* Main.storyboard */; };
+		1842766D24A3429700B049ED /* Rehlat_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1842766B24A3429700B049ED /* Rehlat_Task.xcdatamodeld */; };
+		1842766F24A3429C00B049ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1842766E24A3429C00B049ED /* Assets.xcassets */; };
+		1842767224A3429C00B049ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842767024A3429C00B049ED /* LaunchScreen.storyboard */; };
+		1842767D24A3429D00B049ED /* Rehlat_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842767C24A3429D00B049ED /* Rehlat_TaskTests.swift */; };
+		1842768824A3429D00B049ED /* Rehlat_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842768724A3429D00B049ED /* Rehlat_TaskUITests.swift */; };
+		1842769724A3432F00B049ED /* FlickrCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842769524A3432F00B049ED /* FlickrCollectionViewCell.swift */; };
+		1842769824A3432F00B049ED /* FlickrCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1842769624A3432F00B049ED /* FlickrCollectionViewCell.xib */; };
+		1842769A24A35CB200B049ED /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842769924A35CB200B049ED /* NetworkManager.swift */; };
+		1883F2FC24A49A750051548E /* FlickrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F2FB24A49A750051548E /* FlickrModel.swift */; };
+		1883F2FE24A4A56E0051548E /* FlickrKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F2FD24A4A56E0051548E /* FlickrKeys.swift */; };
+		1883F30024A4B86E0051548E /* FlickrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883F2FF24A4B86E0051548E /* FlickrViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1842767924A3429D00B049ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1842765724A3429600B049ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1842765E24A3429600B049ED;
+			remoteInfo = Rehlat_Task;
+		};
+		1842768424A3429D00B049ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1842765724A3429600B049ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1842765E24A3429600B049ED;
+			remoteInfo = Rehlat_Task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1842765F24A3429700B049ED /* Rehlat_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rehlat_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842766224A3429700B049ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1842766424A3429700B049ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1842766624A3429700B049ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1842766924A3429700B049ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1842766C24A3429700B049ED /* Rehlat_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rehlat_Task.xcdatamodel; sourceTree = "<group>"; };
+		1842766E24A3429C00B049ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1842767124A3429C00B049ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1842767324A3429C00B049ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1842767824A3429D00B049ED /* Rehlat_TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rehlat_TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842767C24A3429D00B049ED /* Rehlat_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rehlat_TaskTests.swift; sourceTree = "<group>"; };
+		1842767E24A3429D00B049ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1842768324A3429D00B049ED /* Rehlat_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rehlat_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842768724A3429D00B049ED /* Rehlat_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rehlat_TaskUITests.swift; sourceTree = "<group>"; };
+		1842768924A3429D00B049ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1842769524A3432F00B049ED /* FlickrCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrCollectionViewCell.swift; sourceTree = "<group>"; };
+		1842769624A3432F00B049ED /* FlickrCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlickrCollectionViewCell.xib; sourceTree = "<group>"; };
+		1842769924A35CB200B049ED /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1883F2FB24A49A750051548E /* FlickrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrModel.swift; sourceTree = "<group>"; };
+		1883F2FD24A4A56E0051548E /* FlickrKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrKeys.swift; sourceTree = "<group>"; };
+		1883F2FF24A4B86E0051548E /* FlickrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1842765C24A3429600B049ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842767524A3429D00B049ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842768024A3429D00B049ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1842765624A3429600B049ED = {
+			isa = PBXGroup;
+			children = (
+				1842766124A3429700B049ED /* Rehlat_Task */,
+				1842767B24A3429D00B049ED /* Rehlat_TaskTests */,
+				1842768624A3429D00B049ED /* Rehlat_TaskUITests */,
+				1842766024A3429700B049ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1842766024A3429700B049ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1842765F24A3429700B049ED /* Rehlat_Task.app */,
+				1842767824A3429D00B049ED /* Rehlat_TaskTests.xctest */,
+				1842768324A3429D00B049ED /* Rehlat_TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1842766124A3429700B049ED /* Rehlat_Task */ = {
+			isa = PBXGroup;
+			children = (
+				1883F30624A4BB930051548E /* Constants */,
+				1883F30224A4BB180051548E /* NetworkManager */,
+				1883F30324A4BB2F0051548E /* Model */,
+				1883F30724A4BBA60051548E /* View */,
+				1883F30524A4BB700051548E /* ViewModel */,
+				1883F30424A4BB500051548E /* Controller */,
+				1883F30124A4BAF50051548E /* AppDelegate */,
+				1842766824A3429700B049ED /* Main.storyboard */,
+				1842766E24A3429C00B049ED /* Assets.xcassets */,
+				1842767024A3429C00B049ED /* LaunchScreen.storyboard */,
+				1842767324A3429C00B049ED /* Info.plist */,
+				1842766B24A3429700B049ED /* Rehlat_Task.xcdatamodeld */,
+			);
+			path = Rehlat_Task;
+			sourceTree = "<group>";
+		};
+		1842767B24A3429D00B049ED /* Rehlat_TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				1842767C24A3429D00B049ED /* Rehlat_TaskTests.swift */,
+				1842767E24A3429D00B049ED /* Info.plist */,
+			);
+			path = Rehlat_TaskTests;
+			sourceTree = "<group>";
+		};
+		1842768624A3429D00B049ED /* Rehlat_TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1842768724A3429D00B049ED /* Rehlat_TaskUITests.swift */,
+				1842768924A3429D00B049ED /* Info.plist */,
+			);
+			path = Rehlat_TaskUITests;
+			sourceTree = "<group>";
+		};
+		1883F30124A4BAF50051548E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1842766224A3429700B049ED /* AppDelegate.swift */,
+				1842766424A3429700B049ED /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1883F30224A4BB180051548E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1842769924A35CB200B049ED /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		1883F30324A4BB2F0051548E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1883F2FB24A49A750051548E /* FlickrModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1883F30424A4BB500051548E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1842766624A3429700B049ED /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1883F30524A4BB700051548E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1883F2FF24A4B86E0051548E /* FlickrViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1883F30624A4BB930051548E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1883F2FD24A4A56E0051548E /* FlickrKeys.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1883F30724A4BBA60051548E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1842769524A3432F00B049ED /* FlickrCollectionViewCell.swift */,
+				1842769624A3432F00B049ED /* FlickrCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1842765E24A3429600B049ED /* Rehlat_Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842768C24A3429D00B049ED /* Build configuration list for PBXNativeTarget "Rehlat_Task" */;
+			buildPhases = (
+				1842765B24A3429600B049ED /* Sources */,
+				1842765C24A3429600B049ED /* Frameworks */,
+				1842765D24A3429600B049ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rehlat_Task;
+			productName = Rehlat_Task;
+			productReference = 1842765F24A3429700B049ED /* Rehlat_Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1842767724A3429D00B049ED /* Rehlat_TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842768F24A3429D00B049ED /* Build configuration list for PBXNativeTarget "Rehlat_TaskTests" */;
+			buildPhases = (
+				1842767424A3429D00B049ED /* Sources */,
+				1842767524A3429D00B049ED /* Frameworks */,
+				1842767624A3429D00B049ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1842767A24A3429D00B049ED /* PBXTargetDependency */,
+			);
+			name = Rehlat_TaskTests;
+			productName = Rehlat_TaskTests;
+			productReference = 1842767824A3429D00B049ED /* Rehlat_TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1842768224A3429D00B049ED /* Rehlat_TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842769224A3429D00B049ED /* Build configuration list for PBXNativeTarget "Rehlat_TaskUITests" */;
+			buildPhases = (
+				1842767F24A3429D00B049ED /* Sources */,
+				1842768024A3429D00B049ED /* Frameworks */,
+				1842768124A3429D00B049ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1842768524A3429D00B049ED /* PBXTargetDependency */,
+			);
+			name = Rehlat_TaskUITests;
+			productName = Rehlat_TaskUITests;
+			productReference = 1842768324A3429D00B049ED /* Rehlat_TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1842765724A3429600B049ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Raghava;
+				TargetAttributes = {
+					1842765E24A3429600B049ED = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					1842767724A3429D00B049ED = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1842765E24A3429600B049ED;
+					};
+					1842768224A3429D00B049ED = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1842765E24A3429600B049ED;
+					};
+				};
+			};
+			buildConfigurationList = 1842765A24A3429600B049ED /* Build configuration list for PBXProject "Rehlat_Task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1842765624A3429600B049ED;
+			productRefGroup = 1842766024A3429700B049ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1842765E24A3429600B049ED /* Rehlat_Task */,
+				1842767724A3429D00B049ED /* Rehlat_TaskTests */,
+				1842768224A3429D00B049ED /* Rehlat_TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1842765D24A3429600B049ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842769824A3432F00B049ED /* FlickrCollectionViewCell.xib in Resources */,
+				1842767224A3429C00B049ED /* LaunchScreen.storyboard in Resources */,
+				1842766F24A3429C00B049ED /* Assets.xcassets in Resources */,
+				1842766A24A3429700B049ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842767624A3429D00B049ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842768124A3429D00B049ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1842765B24A3429600B049ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842769A24A35CB200B049ED /* NetworkManager.swift in Sources */,
+				1883F30024A4B86E0051548E /* FlickrViewModel.swift in Sources */,
+				1842766724A3429700B049ED /* ViewController.swift in Sources */,
+				1883F2FE24A4A56E0051548E /* FlickrKeys.swift in Sources */,
+				1883F2FC24A49A750051548E /* FlickrModel.swift in Sources */,
+				1842766324A3429700B049ED /* AppDelegate.swift in Sources */,
+				1842766D24A3429700B049ED /* Rehlat_Task.xcdatamodeld in Sources */,
+				1842769724A3432F00B049ED /* FlickrCollectionViewCell.swift in Sources */,
+				1842766524A3429700B049ED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842767424A3429D00B049ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842767D24A3429D00B049ED /* Rehlat_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842767F24A3429D00B049ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842768824A3429D00B049ED /* Rehlat_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1842767A24A3429D00B049ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1842765E24A3429600B049ED /* Rehlat_Task */;
+			targetProxy = 1842767924A3429D00B049ED /* PBXContainerItemProxy */;
+		};
+		1842768524A3429D00B049ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1842765E24A3429600B049ED /* Rehlat_Task */;
+			targetProxy = 1842768424A3429D00B049ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1842766824A3429700B049ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1842766924A3429700B049ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1842767024A3429C00B049ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1842767124A3429C00B049ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1842768A24A3429D00B049ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1842768B24A3429D00B049ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1842768D24A3429D00B049ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rehlat_Task/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Raghava.Rehlat-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1842768E24A3429D00B049ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rehlat_Task/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Raghava.Rehlat-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1842769024A3429D00B049ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rehlat_TaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Raghava.Rehlat-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rehlat_Task.app/Rehlat_Task";
+			};
+			name = Debug;
+		};
+		1842769124A3429D00B049ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rehlat_TaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Raghava.Rehlat-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rehlat_Task.app/Rehlat_Task";
+			};
+			name = Release;
+		};
+		1842769324A3429D00B049ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rehlat_TaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Raghava.Rehlat-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rehlat_Task;
+			};
+			name = Debug;
+		};
+		1842769424A3429D00B049ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Rehlat_TaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Raghava.Rehlat-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rehlat_Task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1842765A24A3429600B049ED /* Build configuration list for PBXProject "Rehlat_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842768A24A3429D00B049ED /* Debug */,
+				1842768B24A3429D00B049ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842768C24A3429D00B049ED /* Build configuration list for PBXNativeTarget "Rehlat_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842768D24A3429D00B049ED /* Debug */,
+				1842768E24A3429D00B049ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842768F24A3429D00B049ED /* Build configuration list for PBXNativeTarget "Rehlat_TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842769024A3429D00B049ED /* Debug */,
+				1842769124A3429D00B049ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842769224A3429D00B049ED /* Build configuration list for PBXNativeTarget "Rehlat_TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842769324A3429D00B049ED /* Debug */,
+				1842769424A3429D00B049ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1842766B24A3429700B049ED /* Rehlat_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1842766C24A3429700B049ED /* Rehlat_Task.xcdatamodel */,
+			);
+			currentVersion = 1842766C24A3429700B049ED /* Rehlat_Task.xcdatamodel */;
+			path = Rehlat_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1842765724A3429600B049ED /* Project object */;
+}
